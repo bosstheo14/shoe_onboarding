@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Nike Air Max",
+        "image": "nike_air_max.jpg",
+        "description": "Comfort and style for everyday wear."
+    },
+    {
+        "id": 2,
+        "name": "Nike ZoomX",
+        "image": "nike_zoomx.jpg",
+        "description": "High-performance running shoe."
+    },
+    {
+        "id": 3,
+        "name": "Nike Dunk Low",
+        "image": "nike_dunk_low.jpg",
+        "description": "Classic skateboarding style."
+    }
+]

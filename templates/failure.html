@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Failed</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="failure-body">
+    <div class="failure-container">
+        <h1>Login Failed</h1>
+        <p>Invalid email or password. Please try again.</p>
+        <a href="{{ url_for('login') }}" class="btn">Back to Login</a>
+    </div>
+</body>
+</html>

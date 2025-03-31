@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <h1>Shoe Store</h1>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </nav>
+    <div class="shoe-container">
+        {% for shoe in shoes %}
+            <div class="shoe-card">
+                <img src="{{ url_for('static', filename='images/' + shoe.image) }}" alt="{{ shoe.name }}">
+                <h2>{{ shoe.name }}</h2>
+                <a href="{{ url_for('shoe_detail', shoe_id=shoe.id) }}">Buy Now</a>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

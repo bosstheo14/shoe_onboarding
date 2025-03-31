@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ shoe.name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('dashboard') }}">Back to Shop</a>
+    </nav>
+    <div class="shoe-detail">
+        <img src="{{ url_for('static', filename='images/' + shoe.image) }}" alt="{{ shoe.name }}">
+        <h1>{{ shoe.name }}</h1>
+        <p>{{ shoe.description }}</p>
+    </div>
+</body>
+</html>
